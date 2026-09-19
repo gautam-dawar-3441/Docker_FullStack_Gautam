@@ -1,0 +1,73 @@
+# =========================
+# Node.js
+# =========================
+
+frontend/node_modules/
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+
+# =========================
+# Python
+# =========================
+
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+
+
+# =========================
+# Environment files
+# =========================
+
+.env
+.env.*
+!.env.example
+
+
+# =========================
+# VS Code
+# =========================
+
+.vscode/
+
+
+# =========================
+# Python virtual environment
+# =========================
+
+venv/
+
+
+# =========================
+# OS generated files
+# =========================
+
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# Python / Flask
+# =========================
+
+instance/
+.pytest_cache/
+
+
+# =========================
+# Node / frontend
+# =========================
+
+.npm/
+.nyc_output/
+
+
+# =========================
+# Microsoft Word temporary files
+# =========================
+
+~$*

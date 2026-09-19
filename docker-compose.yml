@@ -1,0 +1,31 @@
+services:
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+
+    image: gautamdawar99/docker-flask-backend:latest
+
+    container_name: flask-backend
+
+    ports:
+      - "5000:5000"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+
+    image: gautamdawar99/docker-express-frontend:latest
+
+    container_name: express-frontend
+
+    ports:
+      - "3000:3000"
+
+    environment:
+      FLASK_BACKEND: http://backend:5000
+
+    depends_on:
+      - backend
